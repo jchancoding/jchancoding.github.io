@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row"><h3>Details about {{ thispet.name }}</h3></div>
+  <div class="row"></div>
+  <p>Pet type: {{ thispet.type }}</p>
+  <p>Description: {{ thispet.description }}</p>
+  <p>Skills: </p>  
+    <ol>
+      <li *ngIf="thispet.skill1">
+          <p>{{ thispet.skill1 }}</p>
+      </li>
+      <li *ngIf="thispet.skill2">
+          <p>{{ thispet.skill2 }}</p>
+      </li>
+      <li *ngIf="thispet.skill3">
+          <p>{{ thispet.skill3 }}</p>
+      </li>
+    </ol>
+  
+    
+  <p>Likes: {{ thispet.likes }}</p>
+
+  <div class="row">
+    <button class="btn btn-success" (click)="likePet()">Like this pet</button> <button class="btn btn-secondary" (click)="adoptPet()">Adopt this pet!</button> <button class="btn btn-info" [routerLink]="['']">Home</button>
+  </div>
+</div>

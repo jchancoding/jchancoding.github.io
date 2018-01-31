@@ -1,0 +1,16 @@
+#tables{
+    border: 1px solid grey;
+}
+th{
+    padding: 10px;
+    border: 1px solid grey;
+}
+tr{
+    border: 1px solid grey;
+}
+td{
+    border: 1px solid grey;
+    width: 200px;
+    padding: 10px;
+    text-align: center
+}
